@@ -2,7 +2,10 @@
 
 ## October 24th 2018
 
-**Team Three**
+**The Four Bytes**
+
+*aka Team Three*
+
 * Sonya Cooley
 * Pete Willmott
 * Haj
