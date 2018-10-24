@@ -1,50 +1,134 @@
-<!-- Content for Custom Order Form -->
-<section class="container-fluid form-content">
-    <div class="row">
-        <div class="col-12">
-            <div class="form-container">
-                <div class="form-elements">
-                    <h1 class="text-uppercase person-text-name">Custom purchase order</h1>
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="FirstnameInput">First Name</label>
-                                    <input type="text" class="form-control" placeholder="First name" id="FirstnameInput" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="LastnameInput">Last Name</label>
-                                    <input type="text" class="form-control" placeholder="Last name" id="LastnameInput" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="inlineFormInputGroupEmailAddress">Email Address</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text">@</div>
-                                        </div>
-                                        <input type="email" class="form-control" id="inlineFormInputGroupEmailAddress" aria-describedby="emailHelp" placeholder="Email Address" required>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>Custom Order Form</title>
+</head>
+
+<body>
+    <header class="masthead mb-auto">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand kisses" href="index.html">Bloody Kisses</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Products</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="customForm.html">Custom order<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content for Custom Order Form -->
+    <section class="container form-custom">
+        <div class="row">
+            <div class="col-12">
+                <div class="form-container">
+                    <div class="form-elements">
+                        <form id="customForm" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="FirstnameInput">Requester First Name</label>
+                                        <input type="text" class="form-control" placeholder="First name" id="RFirstnameInput" required>
                                     </div>
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="LastnameInput">Requester Last Name</label>
+                                        <input type="text" class="form-control" placeholder="Last name" id="RLastnameInput" required>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="comments">Any other comments</label>
-                            <textarea class="form-control" id="comments" rows="5"></textarea>
-                        </div>
-                        <div class="button-align">
-                            <button type="submit" class="btn btn-secondary btn-bookus">Submit your order</button>
-                        </div>
-                    </form>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="inlineFormInputGroupEmailAddress">Requester Email Address</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">@</div>
+                                            </div>
+                                            <input type="email" class="form-control" id="REmail" aria-describedby="emailHelp" placeholder="Email Address" required>
+                                        </div>
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="FirstnameInput">Blood Supplier First Name</label>
+                                        <input type="text" class="form-control" placeholder="First name" id="BSFirstnameInput" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="LastnameInput">Blood Supplier Last Name</label>
+                                        <input type="text" class="form-control" placeholder="Last name" id="BSLastnameInput" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Delivery Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress2">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputZip">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                            </div>
+                            <div class="button-align">
+                                <button type="submit" class="btn btn-primary" onclick="customOrder()">Submit your order</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+        <div id="formMessage"></div>
+    </section>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+
+    <script language="javascript">
+        function customOrder() {
+            document.getElementById("formMessage").innerHTML = "Your order is being processed";
+            window.localStorage.RFirstnameInput = document.getElementById('RFirstnameInput').value;
+            window.localStorage.RLastnameInput = document.getElementById('RLastnameInput').value;
+            window.localStorage.REmail = document.getElementById('REmail').value;
+            window.localStorage.BSFirstnameInput = document.getElementById('BSFirstnameInput').value;
+            window.localStorage.BSLastnameInput = document.getElementById('BSLastnameInput').value;
+            window.localStorage.inputAddress = document.getElementById('inputAddress').value;
+            window.localStorage.inputAddress2 = document.getElementById('inputAddress2').value;
+            window.localStorage.inputCity = document.getElementById('inputCity').value;
+            window.localStorage.inputZip = document.getElementById('inputZip').value;
+        }
+    </script>
+
+</body>
+
+</html>

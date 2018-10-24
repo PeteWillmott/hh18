@@ -1,0 +1,36 @@
+h3.kisses {
+    font-weight: 900;
+    color: #ff0000;
+    font-family: monotype corsiva;
+    font-size: 5rem;
+}
+
+.form-custom{
+    margin-top: 2rem;
+}
+
+.form-custom label {
+    font-weight: 600;
+}
+
+#formMessage {
+    margin-top: 1rem;
+}
+
+
+.background{
+    background-image: url(../img/indexbg.jpg);
+    background-size: cover;
+    height:100vh;
+    width: auto;
+}
+
+
+.prod-text {
+    padding-top: 2vmin;
+}
+
+.prod-heading {
+    padding-top: 3vmin;
+    padding-bottom: 5vmin;
+}

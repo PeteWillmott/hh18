@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>Cart</title>
+</head>
+
+<body>
+    <header class="masthead mb-auto">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand kisses" href="#">Bloody Kisses</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="customForm.html">Custom order<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="customForm.html">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Content for Custom Order Form -->
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="formMessage"></div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.localStorage.getItem('user');
+        window.localStorage.RFirstnameInput = document.getElementById('RFirstnameInput').value;
+        window.localStorage.RLastnameInput = document.getElementById('RLastnameInput').value;
+        window.localStorage.REmail = document.getElementById('REmail').value;
+        window.localStorage.BSFirstnameInput = document.getElementById('BSFirstnameInput').value;
+        window.localStorage.BSLastnameInput = document.getElementById('BSLastnameInput').value;
+        window.localStorage.inputAddress = document.getElementById('inputAddress').value;
+        window.localStorage.inputAddress2 = document.getElementById('inputAddress2').value;
+        window.localStorage.inputCity = document.getElementById('inputCity').value;
+        window.localStorage.inputZip = document.getElementById('inputZip').value;
+    </script>
+
+
+</body>
+
+</html>
