@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=UnifrakturCook:700');
+
 h3.kisses {
     font-weight: 900;
     color: #ff0000;
     font-family: monotype corsiva;
     font-size: 5rem;
+}
+
+.cover-heading {
+    font-family: UnifrakturCook, sans-serif;
 }
 
 .form-custom{
